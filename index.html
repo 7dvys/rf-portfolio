@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Reyes Franco</title>
+    <meta name="viewport" content="width=device-width user-scalabe=no initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="description"
+        content="Welcome to my personal website where you can find all my works and know about me." />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="#">home</a>
+                <a href="#about">about</a>
+                <a href="#experience">experience</a>
+                <a href="#work">work</a>
+                <a href="#contact">contact</a>
+            </div>
+            <a class="withBorder" href="#resume">resume</a>
+        </nav>
+        <button>open</button>
+    </header>
+
+    <main>
+        <section id="home">
+            <span>Hi, my name is</span>
+            <h1>Franco Reyes.</h1>
+            <h2>I build digital solutions.</h2>
+            <p>
+                I'm a full stack developer specializing in building (and sometimes
+                designing) effective and accessible digital solutions at
+                <a href="#">My bussiness page.</a>
+            </p>
+            <a class="withBorder currentProject" target="_blank" href="#">See my current project</a>
+        </section>
+
+        <section id="about">
+            <h2>About me</h2>
+            <div class="aboutText">
+
+                <p>
+                    Hello! My name is Franco and I build digital solutions. My interest
+                    in programming and technology started back 2014 when I began to was
+                    <a href="https://www.youtube.com/watch?v=sT334zPBaws&t=10s&ab_channel=FrancoAguilera">Minecraft
+                        command block youtuber</a>
+                    turns out that using the command block teaches you imperative
+                    programming. Plus, I had to learn about video editing and some other
+                    programs to make my videos, that greatly nurtured my self-taught
+                    ability to finally become programmer.
+                    <br>
+                    Currently I'm studying Computer Engineering at ITBA in Buenos Aires,
+                    Argentina.
+                </p>
+                <img src="https://www.gamersdecide.com/sites/default/files/thanos3.jpg" alt="">
+            </div>
+            <p>
+                Here are a few technologies I've been working recently:
+            </p>
+            <ul class="withPizza">
+                <li>Javascript ES6+ (Angular)</li>
+                <li>Css</li>
+                <li>Node.js</li>
+                <li>PHP (Laravel)</li>
+                <li>SQL and NoSQL (MariaDB and MongoDB)</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Where I've worked</h2>
+            <ul>
+                <!-- <li class="active" onclick="experiencePanel('mybusines')">My business</li> -->
+                <li class="item active" onclick="experiencePanel('rpm')">RPM Repuestos y Accesorios</li>
+                <li class="item" onclick="experiencePanel('free')">As a Freelancer</li>
+            </ul>
+
+            <div style="display:block" class="panel rpm">
+                <h3>Full Stack Developer</h3>
+                <time>2021 - Today</teime>
+                    <ul class="withPizza">
+                        <li>Design and create digital infraestructure.</li>
+                        <li>Build a marketing website and e-commerce platform.</li>
+                        <li>Create innovative solutions that allow the evolution of the company in terms of efficiency.
+                        </li>
+                    </ul>
+            </div>
+            <div style='display:none' class="panel freelancer">
+                <h3>Freelancer</h3>
+                <time>2021 - Today</time>
+                <ul class="withPizza">
+                    <li>Develop all kinds of projects</li>
+                    <li>Work with a variety of different languages, frameworks and technologies.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="work">
+            <h2>Things I've built</h2>
+
+            <div class="bigCard">
+                <div class="content">
+
+                    <div class="textAndLinks">
+                        <h3>Portfolio CSS</h3>
+                        <div class="links">
+                            <img onclick="location.href='#';" src="resources/github-brands.svg" alt="github">
+                            <img onclick="location.href='#';" src="resources/external-link-alt-solid.svg" alt="page">
+                        </div>
+                        <p>Lorem ipsum dolor, sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quod
+                            neque magnam, corrupti odio incidunt consequuntur. Animi, dolorem cum consectetur sunt
+                            provident ut mollitia culpa modi dolore aliquam architecto sit. amet consectetur adipisicing
+                            elit. Quaerat veniam quos, magnam corrupti, totam necessitatibus consequuntur minus dolorum
+                            porro commodi culpa repudiandae repellat exercitationem nesciunt maxime? Dolores, dolorum.
+                            Magnam, quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eveniet
+                            sapiente nam neque eum aspernatur voluptatem recusandae, porro et perspiciatis accusamus aut
+                            maiores ut, ratione fugiat delectus odit magnam excepturi.</p>
+                    </div>
+
+                    <div class="detailsAndControls">
+                        <div class="details">
+                            <span>Last update</span>
+                            <span>Last change</span>
+                        </div>
+                        <div class="controls">
+                            <img style="width: 1vw;" class="leftButton" src="resources/chevron-left-solid.svg" alt="">
+                            <img style="width: 1vw;" class="rightButton" src="resources/chevron-right-solid.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>All My Projects</h2>
+
+            <div class="projects">
+                <div class="project">
+                    <h3>Portfolio CSS</h3>
+                    <div class="links">
+                        <img onclick="location.href='#';" src="resources/github-brands.svg" alt="github">
+                        <img onclick="location.href='#';" src="resources/external-link-alt-solid.svg" alt="page">
+                    </div>
+                    <p>Lorem ipsum dolor, sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quod
+                        neque magnam, corrupti odio incidunt consequuntur. Animi, dolorem cum consectetur sunt provident
+                        ut mollitia culpa modi dolore aliquam architecto sit.</p>
+                    <div class="details">
+                        <ul class="lenguages">
+                            <li>css</li>
+                            <li>html</li>
+                            <li>javascript</li>
+                        </ul>
+                        <div class="information">
+                            <span>Last update</span>
+                            <span>Last change</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>What can I help you with? Just get in touch and I will respond as soon as posible.<br>I will be waiting your message! :D</p>
+            <a class="withBorder" target="_blank" href="mailto:fdr160102@gmail.com?subject=Franco Reyes Portfolio">Say Hello!</a>
+        </section>
+
+    </main>
+    <footer>
+        <p>
+            Created & Designer By Franco Reyes
+        </p> 
+        <div>
+            <img onclick="window.open('https://www.github.com/7dvys/','_blank');" src="resources/github-brands.svg" alt="">
+            <img onclick="window.open('mailto:fdr160102@gmail.com?subject=Franco Reyes Portfolio','_blank');" src="resources/envelope-open-regular.svg" alt="">
+            <img onclick="window.open('https://www.instagram.com/snow1000cc/','_blank');" src="resources/instagram-svgrepo-com.svg" alt="">
+        </div>
+
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

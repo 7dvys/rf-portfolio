@@ -1,0 +1,75 @@
+/* X-Small devices (portrait phones, less than 576px)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+:root{
+    --side-padding: 10vw;
+    --general-padding: 0px var(--side-padding);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+img{
+    display: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - calc(var(--side-padding) * 2));
+    padding: var(--general-padding);
+}
+
+header{
+    display: flex;
+    height: 3rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+header{
+    background-color:red;
+}
+
+
+/* No media query for `xs` since this is the default in Bootstrap
+*/
+
+/* Small devices (landscape phones, 576px and up)
+*/
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up)
+*/
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up)
+*/
+@media (min-width: 992px) {
+    
+}
+
+/* X-Large devices (large desktops, 1200px and up)
+*/
+@media (min-width: 1200px) {
+    
+}
+
+/* XX-Large devices (larger desktops, 1400px and up)
+*/
+@media (min-width: 1400px) {
+    
+}
