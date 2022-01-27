@@ -6,6 +6,8 @@
 :root{
     --side-padding: 10vw;
     --general-padding: 0px var(--side-padding);
+    --general-widht:calc(100vw - calc(var(--side-padding) * 2));
+    --header-height:2rem;
 }
 
 *{
@@ -23,22 +25,40 @@ img{
 body{
     display: flex;
     flex-direction: column;
-    width: calc(100vw - calc(var(--side-padding) * 2));
+}
+
+main{
+    width: var(--general-widht);
     padding: var(--general-padding);
+    margin-top: var(--header-height);
 }
 
 header{
+    position: fixed;
+    height: var(--header-height);
+    background-color: red;
+}
+
+header nav{
     display: flex;
-    height: 3rem;
-    justify-content: flex-end;
-    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    transform: translateY(-100vh);
+    width: 100vw;
+    height: 80vh;
+    transition: all 500ms;
 }
 
+header nav div{
+    display: flex;
+    flex-direction: column;
+}
 
-
-header{
+header > div:focus + nav {
+    transform: translateY(-32px);
     background-color:red;
 }
+
 
 
 /* No media query for `xs` since this is the default in Bootstrap
