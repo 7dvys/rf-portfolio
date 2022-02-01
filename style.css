@@ -7,7 +7,7 @@
     --side-padding: 10vw;
     --general-padding: 0px var(--side-padding);
     --general-widht:calc(100vw - calc(var(--side-padding) * 2));
-    --header-height:2rem;
+    --header-height:0px;
 }
 
 *{
@@ -18,45 +18,56 @@
     font-family: "Source Sans Pro", sans-serif;
 }
 
-img{
-    display: none;
+a{
+    list-style: none;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
+img{
+    display: none;
 }
 
 main{
     width: var(--general-widht);
     padding: var(--general-padding);
-    margin-top: var(--header-height);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+
+section{
+    flex-basis: 100vh;
 }
 
 header{
-    position: fixed;
+    position: sticky;
+    top: 0px;
     height: var(--header-height);
-    background-color: red;
+    z-index: 1;
 }
 
-header nav{
+nav{
     display: flex;
     flex-direction: column;
     text-align: center;
     transform: translateY(-100vh);
     width: 100vw;
-    height: 80vh;
     transition: all 500ms;
+    padding: 2rem 0px;
+    background-color: wheat;
+    gap: 0.8rem;
+    font-size: 1.5rem;
 }
 
-header nav div{
-    display: flex;
-    flex-direction: column;
+header > div{
+    line-height: 2rem;
 }
 
 header > div:focus + nav {
-    transform: translateY(-32px);
-    background-color:red;
+    transform: translateY(-2rem);
+}
+
+nav a{
+
 }
 
 
