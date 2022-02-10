@@ -41,7 +41,7 @@ header > div{
 }
 
 header > div:focus{
-    transform: rotate(90deg);
+    transform: rotate(45deg) scaleX(-1);
 }
 
 nav{
