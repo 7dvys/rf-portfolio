@@ -33,16 +33,27 @@ header{
     margin-top: .5rem;
 }
 
-.menuButton{
+.menuButton:focus + nav{
     top: 0px;
 }
 
 nav{
+    box-sizing: border-box;
     position: fixed;
     top: -100vh;
     margin: 0px auto;
     display: flex;
+    width: 100vw;
+    height: 100vh;
     flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 0.8rem;
+    font-weight: 100;
+    font-size: 1.4rem;
+    padding: 1.7rem 0px;
+    transition: all 600ms;
+    background-color: white;
 }
 
 /*  */
