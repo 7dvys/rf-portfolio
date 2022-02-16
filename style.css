@@ -7,6 +7,14 @@
     --side-padding: 10vw;
     --general-padding: 0px var(--side-padding);
     --general-widht:calc(100vw - calc(var(--side-padding) * 2));
+    /* Colors */
+    --black:rgba(13, 13, 13, 1);
+    --grey1:rgba(64, 64, 64, 1);
+    --grey2:rgba(115, 115, 115, 1);
+    --grey3:rgba(191, 191, 191, 1);
+    --white:rgba(242, 242, 242, 1);
+
+
 }
 
 *{
@@ -15,19 +23,31 @@
     list-style: none;
     text-decoration: none;
     font-family: "Source Sans Pro", sans-serif;
+    color: var(--white);
 }
+
+h1,h2,p{
+    flex-basis: 100%;
+}
+
+body{
+    background-color: var(--black);
+}
+
 /* header */
 header{
     width: 100vw;
-    height: 0px;
+    height: 3rem;
     position: fixed;
+    top: 0px;
+    background-color: var(--black);
 }
 
 .menuButton{
     width: 1rem;
     height: 1rem;
-    border-bottom: 2px solid black;
-    border-right: 2px solid black;
+    border-bottom: 2px solid var(--grey1);
+    border-right: 2px solid var(--grey1);
     transform: rotate(45deg);
     margin: 0px auto;
     margin-top: .5rem;
@@ -41,20 +61,31 @@ nav{
     box-sizing: border-box;
     position: fixed;
     top: -100vh;
-    margin: 0px auto;
-    display: flex;
     width: 100vw;
     height: 100vh;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    gap: 0.8rem;
-    font-weight: 100;
     font-size: 1.4rem;
-    padding: 1.7rem 0px;
     transition: all 600ms;
-    background-color: white;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+nav a{
+    display: list-item;
+    color: var(--black);
+    line-height: 2.3rem;
+    text-align: center;
+    
+}
+
+.resume{
+    padding: 0px 1rem;
+    margin-top: 0.5rem;
+    color: var(--white);
+    background-color: var(--black);
+}
+
 
 /*  */
 
@@ -67,7 +98,6 @@ section{
     display: flex;
     flex-flow: row wrap;
     min-height: 100vh;
-    justify-content: center;
     align-content: center;
 }
 
