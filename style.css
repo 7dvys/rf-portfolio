@@ -26,12 +26,20 @@
     color: var(--white);
 }
 
-h1,h2,p{
+h2,p{
     flex-basis: 100%;
 }
 
 body{
     background-color: var(--black);
+}
+
+.withBorder{
+    padding: 0px 1rem;
+    margin-top: 0.5rem;
+    color: var(--black);
+    background-color: var(--white);
+    border: 1px solid var(--grey1);
 }
 
 /* header */
@@ -100,6 +108,18 @@ section{
     min-height: 100vh;
     align-content: center;
 }
+
+/* Home */
+.francoReyes{
+    flex-basis: 100%;
+}
+.francoReyes h1{
+    display:inline;
+    background-color: aliceblue;
+    color:var(--black);
+    box-shadow: rgba(240, 46, 170, 0.4) -2px 2px, rgba(240, 46, 170, 0.3) -4px 4px;
+}
+/*  */
 
 
 
