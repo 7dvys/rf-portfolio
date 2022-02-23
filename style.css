@@ -26,8 +26,22 @@
     color: var(--white);
 }
 
+a:not(.resume),a:not(.currentProject){
+
+}
+
+h2{
+    margin-bottom: .2rem;
+    font-size: 1.6rem;
+}
+
 h2,p{
     flex-basis: 100%;
+}
+
+p{
+    font-size: 1.2rem;
+
 }
 
 body{
@@ -35,12 +49,14 @@ body{
 }
 
 .withBorder{
-    padding: 0px 1rem;
-    margin-top: 0.5rem;
-    color: var(--black);
-    background-color: var(--white);
-    border: 1px solid var(--grey1);
+    padding: .25rem .5rem;
+    margin-top: 1.2rem;
+    color: var(--white);
+    font-weight:500;
+    font-size: 1.2rem;
+    border: 1px solid var(--white);
 }
+
 
 /* header */
 header{
@@ -88,14 +104,17 @@ nav a{
 }
 
 .resume{
-    padding: 0px 1rem;
     margin-top: 0.5rem;
-    color: var(--white);
-    background-color: var(--black);
+    padding: 0rem .5rem;
+    color: var(--black);
+    border-color: var(--black);
+    font-size: 1.4rem;
 }
 
 
 /*  */
+
+/* Main */
 
 main{
     width: var(--general-widht);
@@ -110,17 +129,29 @@ section{
 }
 
 /* Home */
+
+#home span{
+    margin-left: .5rem;
+    margin-bottom: .4rem;
+}
+
+#home p{
+    margin-top: .5rem;
+}
+
 .francoReyes{
     flex-basis: 100%;
 }
-.francoReyes h1{
+.francoReyes h1, .francoReyes h2{
     display:inline;
-    background-color: aliceblue;
+    font-size: 1.8rem;
+    background-color: var(--white);
     color:var(--black);
-    box-shadow: rgba(240, 46, 170, 0.4) -2px 2px, rgba(240, 46, 170, 0.3) -4px 4px;
+    padding: 0px .5rem;
 }
-/*  */
 
+/*  */
+/*  */
 
 
 /* No media query for `xs` since this is the default in Bootstrap
