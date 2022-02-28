@@ -7,16 +7,18 @@
     --side-padding: 10vw;
     --general-padding: 0px var(--side-padding);
     --general-widht:calc(100vw - calc(var(--side-padding) * 2));
+    --header-height: 3rem;
+    --footer-height: 3rem;
+    --main-height:calc(100vh - var(--header-height));
     /* Colors */
     --black:rgba(13, 13, 13, 1);
     --grey1:rgba(64, 64, 64, 1);
     --grey2:rgba(115, 115, 115, 1);
     --grey3:rgba(191, 191, 191, 1);
     --white:rgba(242, 242, 242, 1);
-
-
 }
 
+/* Estilos Generales */
 *{
     padding: 0px;
     margin: 0px;
@@ -26,8 +28,8 @@
     color: var(--white);
 }
 
-a:not(.resume),a:not(.currentProject){
-
+h2,p{
+    flex-basis: 100%;
 }
 
 h2{
@@ -35,17 +37,43 @@ h2{
     font-size: 1.6rem;
 }
 
-h2,p{
-    flex-basis: 100%;
-}
-
 p{
     font-size: 1.2rem;
+}
 
+main a:not(.withBorder){
+    border-bottom: 2px solid var(--white);
+    font-weight: bold;
+    transition: all 500ms;
+}
+
+main a:hover:not(.withBorder){
+    background-color: var(--white);
+    color: var(--black);
+    border-bottom: none;
 }
 
 body{
-    background-color: var(--black);
+    max-height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: linear-gradient(-45deg, var(--black), var(--grey2));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .withBorder{
@@ -56,25 +84,27 @@ body{
     font-size: 1.2rem;
     border: 1px solid var(--white);
 }
-
+/*  */
 
 /* header */
 header{
     width: 100vw;
-    height: 3rem;
+    height: var(--header-height);
     position: fixed;
     top: 0px;
-    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+
 }
 
 .menuButton{
     width: 1rem;
     height: 1rem;
-    border-bottom: 2px solid var(--grey1);
-    border-right: 2px solid var(--grey1);
+    position: absolute;
+    top: 0.5rem;
+    border-bottom: 2px solid var(--white);
+    border-right: 2px solid var(--white);
     transform: rotate(45deg);
-    margin: 0px auto;
-    margin-top: .5rem;
 }
 
 .menuButton:focus + nav{
@@ -111,7 +141,6 @@ nav a{
     font-size: 1.4rem;
 }
 
-
 /*  */
 
 /* Main */
@@ -119,6 +148,10 @@ nav a{
 main{
     width: var(--general-widht);
     padding: var(--general-padding);
+    height: var(--main-height);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    margin-top: var(--header-height);
 }
 
 section{
@@ -126,6 +159,10 @@ section{
     flex-flow: row wrap;
     min-height: 100vh;
     align-content: center;
+}
+
+section:first-child{
+    min-height: calc(100vh - var(--header-height));
 }
 
 /* Home */
@@ -145,12 +182,23 @@ section{
 .francoReyes h1, .francoReyes h2{
     display:inline;
     font-size: 1.8rem;
-    background-color: var(--white);
+    background-color:var(--white);
     color:var(--black);
     padding: 0px .5rem;
 }
 
 /*  */
+
+/* about */
+#about img{
+    margin: 1.5rem 0px;
+    width: 100%;
+    border-radius: 4px;
+}
+/*  */
+footer{
+    height: var(--footer-height);
+}
 /*  */
 
 
