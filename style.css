@@ -84,6 +84,24 @@ body {
     font-size: 1.2rem;
     border: 1px solid var(--white);
 }
+
+.withPizza li{
+    margin-left: 1em;
+}
+
+.withPizza li::before{
+    content: "";
+    border-color: transparent var(--white);
+    border-style: solid;
+    border-width: 0.30em 0 0.30em 0.35em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 0.9em;
+    position: relative;
+}
+ 
 /*  */
 
 /* header */
@@ -194,6 +212,30 @@ section:first-child{
     margin: 1.5rem 0px;
     width: 100%;
     border-radius: 4px;
+}
+/*  */
+
+/* Experience */
+.experienceCards{
+    flex-basis: 100vw;
+}
+input + div{
+    display: none;
+}
+input{
+    appearance: none;
+    visibility: hidden;
+}
+
+label{
+    display: block;
+    width: 100%;
+}
+input:checked + div{
+    display: block;
+    height: 10px;
+    width: 10px;
+    background-color: red;
 }
 /*  */
 footer{
