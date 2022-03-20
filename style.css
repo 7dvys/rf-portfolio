@@ -228,7 +228,7 @@ section:first-child{
 
 /* Experience */
 .experienceCards{
-    flex-basis: 100vw;
+    flex-basis: 100%;
 }
 
 .experienceCards > div{
@@ -243,26 +243,55 @@ section:first-child{
         display: flex;
         flex-wrap: wrap;
         flex-basis: 100%;
-        background:url('/home/ryn/Downloads/Foto.jpg');
+        background:url('https://static.wikia.nocookie.net/marveldatabase/images/b/bc/Thanos_%28Earth-199999%29_from_Avengers_Infinity_War_-_The_Official_Movie_Special_001.jpg');
         padding: 1.2rem 1rem;
         box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px,inset 0 0 0 1000px rgba(0,0,0,.6);
         margin-bottom: 1rem;
-    }
-
-    #work .card p, #work .card h4, #work .card div, #work .project p{
-        flex-basis: 100%;
     }
 
     #work .project{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
         flex-basis: 100%;
-        padding: 1.2rem 1rem;
+    }   
+
+    #work table{
+        border-collapse: collapse;
+        width: 100%;
+        padding-bottom: 1rem;
         box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px,inset 0 0 0 1000px rgba(0,0,0,.6);
-        margin-bottom: 1rem;
+    }
+    
+    #work table tr{
+        min-height: 3rem;
     }
 
+    #work table td,#work table th{
+        padding: 0.4rem 0px;
+        padding-left: 1rem;
+        text-align: left;
+    }
+
+    #work table th{
+        color: var(--grey3);
+        font-size: 1.2em;
+        padding-top: 1rem;
+    }
+
+    #work table td{
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+    #work table td:nth-child(3), #work table th:nth-child(3){
+        text-align: right;
+        padding-right: 1rem;
+    }
+
+    #work table tr:last-child td{
+        padding-bottom: 1rem;
+    }
+
+
+    
 /*  */
 /* Contact */
 #contact ul{
